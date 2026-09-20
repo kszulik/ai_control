@@ -59,3 +59,17 @@ Nie przechowuj tutaj:
 - ryzyk technicznych.
 
 Te informacje należą do dokumentacji właściwego repozytorium.
+
+
+## Model governance
+
+Globalne zasady pracy modelu dla projektu CDSO_pAudio pochodzą z `kszulik/ai_control`.
+
+Repozytoria `cdso_new` i `cdso_old` utrzymują jedynie cienkie adaptery:
+- `documentation/project/AI_PROJECT_PROMPT.md`,
+- `documentation/project/AI_WORKFLOW.md`,
+- `documentation/project/AI_CHECKLIST.md`.
+
+Adaptery nie mogą definiować alternatywnego globalnego workflow.
+
+`2lg2_AVC/documents/README.md` pełni lokalny punkt wejścia technicznego i również nie definiuje globalnych polityk AI.
