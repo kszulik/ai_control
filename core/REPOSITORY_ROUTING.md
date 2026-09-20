@@ -33,9 +33,15 @@ W CROSS_REPO:
 - każdy fakt i każda zmiana muszą wskazywać repozytorium, którego dotyczą,
 - każda zmiana zapisana do innego repozytorium powinna tworzyć osobny logiczny commit.
 
+## Registry projektów
+
+Centralnym indeksem projektów jest `PROJECT_REGISTRY.md`.
+
+Model powinien najpierw potwierdzić projekt w registry, a następnie otworzyć wskazany descriptor.
+
 ## Dodawanie projektów
 
-Nowy projekt należy zarejestrować przez descriptor w `projects/`.
+Nowy projekt należy zarejestrować przez descriptor w `projects/` oraz wpis w `PROJECT_REGISTRY.md`.
 
 Descriptor powinien zawierać:
 - nazwę projektu,
