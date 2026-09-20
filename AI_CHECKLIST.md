@@ -2,6 +2,7 @@
 
 ## Przed analizą
 
+- [ ] Odczytano wymagane polityki z `core/`.
 - [ ] Odczytano `PROJECT_REGISTRY.md`.
 - [ ] Zidentyfikowano projekt.
 - [ ] Wczytano descriptor wskazany przez registry.
