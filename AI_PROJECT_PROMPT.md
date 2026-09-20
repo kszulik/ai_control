@@ -13,16 +13,18 @@ Nie zawiera wiedzy domenowej. Jego zadaniem jest ustalenie projektu, repozytoriu
 
 Przed większym zadaniem:
 
-1. przeczytaj wymagane polityki z `core/`,
+1. przeczytaj `PROJECT_REGISTRY.md`,
 2. zidentyfikuj projekt,
-3. wczytaj właściwy descriptor z `projects/`,
-4. ustal:
+3. wczytaj descriptor wskazany przez registry,
+4. przeczytaj wymagane polityki z `core/`,
+5. ustal:
+   - `PROJECT`,
    - `PRIMARY_REPO`,
    - `MODE = SINGLE_REPO | CROSS_REPO`,
    - `REFERENCE_REPOS`,
-5. ustal branch i — dla większej analizy — bazowy commit SHA,
-6. przejdź do punktu wejścia dokumentacji `PRIMARY_REPO`,
-7. dopiero potem analizuj kod.
+6. ustal branch i — dla większej analizy — bazowy commit SHA,
+7. przejdź do punktu wejścia dokumentacji `PRIMARY_REPO`,
+8. dopiero potem analizuj kod.
 
 ## 3. Zasada separacji
 
