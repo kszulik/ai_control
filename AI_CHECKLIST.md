@@ -2,8 +2,9 @@
 
 ## Przed analizą
 
+- [ ] Odczytano `PROJECT_REGISTRY.md`.
 - [ ] Zidentyfikowano projekt.
-- [ ] Wczytano właściwy descriptor projektu.
+- [ ] Wczytano descriptor wskazany przez registry.
 - [ ] Ustalono `PRIMARY_REPO`.
 - [ ] Ustalono `SINGLE_REPO` albo `CROSS_REPO`.
 - [ ] Ustalono `REFERENCE_REPOS`, jeżeli są potrzebne.
