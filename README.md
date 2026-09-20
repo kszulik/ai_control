@@ -26,9 +26,10 @@ repozytorium projektu
 Model powinien rozpocząć od:
 
 1. `AI_PROJECT_PROMPT.md`,
-2. właściwych polityk w `core/`,
-3. descriptoru projektu w `projects/`,
-4. dokumentacji wskazanego `PRIMARY_REPO`.
+2. `PROJECT_REGISTRY.md`,
+3. właściwych polityk w `core/`,
+4. descriptoru projektu wskazanego przez registry,
+5. dokumentacji wskazanego `PRIMARY_REPO`.
 
 ## Struktura
 
@@ -37,6 +38,7 @@ ai_control/
 ├── README.md
 ├── AI_PROJECT_PROMPT.md
 ├── AI_CHECKLIST.md
+├── PROJECT_REGISTRY.md
 ├── core/
 │   ├── SOURCE_OF_TRUTH.md
 │   ├── REPOSITORY_ROUTING.md
