@@ -27,8 +27,8 @@ Model powinien rozpocząć od:
 
 1. `AI_PROJECT_PROMPT.md`,
 2. `PROJECT_REGISTRY.md`,
-3. właściwych polityk w `core/`,
-4. descriptoru projektu wskazanego przez registry,
+3. descriptoru projektu wskazanego przez registry,
+4. wymaganych polityk w `core/`,
 5. dokumentacji wskazanego `PRIMARY_REPO`.
 
 ## Struktura
