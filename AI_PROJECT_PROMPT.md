@@ -13,10 +13,10 @@ Nie zawiera wiedzy domenowej. Jego zadaniem jest ustalenie projektu, repozytoriu
 
 Przed większym zadaniem:
 
-1. przeczytaj `PROJECT_REGISTRY.md`,
-2. zidentyfikuj projekt,
-3. wczytaj descriptor wskazany przez registry,
-4. przeczytaj wymagane polityki z `core/`,
+1. przeczytaj wymagane polityki z `core/`,
+2. przeczytaj `PROJECT_REGISTRY.md`,
+3. zidentyfikuj projekt,
+4. wczytaj descriptor wskazany przez registry,
 5. ustal:
    - `PROJECT`,
    - `PRIMARY_REPO`,
