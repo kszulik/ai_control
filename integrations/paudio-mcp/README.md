@@ -125,3 +125,35 @@ The following files are intentionally local and ignored by Git:
 
 This keeps `repo_status` focused on real source changes while preserving the local
 MCP configuration outside the repository history.
+
+
+## Secure MCP Tunnel
+
+ChatGPT does not connect directly to localhost. Use OpenAI Secure MCP Tunnel for ChatGPT Business developer-mode testing.
+
+Prerequisites:
+- create a tunnel in OpenAI Platform Tunnels,
+- create a runtime API key whose principal has Tunnels Read + Use,
+- download the supported Windows tunnel-client binary from the Platform Tunnels page.
+
+Do not store the runtime API key or tunnel id in Git.
+
+PowerShell:
+
+```powershell
+cd "I:\\paudio\\AI repository\\ai_control\\integrations\\paudio-mcp"
+.\\.venv\\Scripts\\Activate.ps1
+$env:PAUDIO_MCP_CONFIG = (Resolve-Path .\\config.toml)
+$env:CONTROL_PLANE_API_KEY = "<runtime-api-key>"
+.\\scripts\\setup-tunnel.ps1 -TunnelId "tunnel_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+When doctor succeeds:
+
+```powershell
+.\\scripts\\run-tunnel.ps1
+```
+
+Keep that terminal open while ChatGPT uses the MCP app. Then create the custom app in ChatGPT Business via Workspace settings -> Apps -> Create, provide the tunnel MCP endpoint shown by OpenAI Platform, Scan Tools, and create the draft app.
+
+Rollback: stop tunnel-client and use ACCESS_BACKEND=GITHUB.
