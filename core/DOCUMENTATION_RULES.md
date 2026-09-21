@@ -40,3 +40,14 @@ Dla ważnych dokumentów warto utrzymywać:
 - datę rewalidacji.
 
 Nie oznacza to, że dokument traci ważność po każdym commicie. Wymaga ponownej oceny, gdy zmienia się kod w jego zakresie.
+
+
+## Commit dokumentacji powiazanej ze zmiana kodu
+
+Jeżeli aktualizacja dokumentacji wynika bezpośrednio z bieżącej zmiany kodu, dokumentacja musi zostać dołączona do tego samego commitu co kod.
+
+Nie twórz następujących po sobie commitów typu:
+- commit kodu,
+- osobny commit "Docs" opisujący dokładnie tę samą zmianę.
+
+Wyjątkiem jest zadanie wyłącznie dokumentacyjne lub niezależna korekta dokumentacji niewynikająca z bieżącej zmiany implementacji.
