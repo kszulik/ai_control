@@ -110,3 +110,18 @@ To return to the current workflow:
 3. continue using the GitHub connector.
 
 No project-repository migration or history rewrite is required.
+
+
+## Local generated files
+
+The following files are intentionally local and ignored by Git:
+
+- `.venv/`
+- `config.toml`
+- `src/*.egg-info/`
+- `**/__pycache__/`
+- `.pytest_cache/`
+- `uv.lock`
+
+This keeps `repo_status` focused on real source changes while preserving the local
+MCP configuration outside the repository history.
