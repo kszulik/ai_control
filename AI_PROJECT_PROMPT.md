@@ -22,9 +22,10 @@ Przed większym zadaniem:
    - `PRIMARY_REPO`,
    - `MODE = SINGLE_REPO | CROSS_REPO`,
    - `REFERENCE_REPOS`,
-6. ustal branch i — dla większej analizy — bazowy commit SHA,
-7. przejdź do punktu wejścia dokumentacji `PRIMARY_REPO`,
-8. dopiero potem analizuj kod.
+6. ustal `ACCESS_BACKEND` zgodnie z `core/ACCESS_BACKENDS.md`,
+7. ustal branch i — dla większej analizy — bazowy commit SHA,
+8. przejdź do punktu wejścia dokumentacji `PRIMARY_REPO`,
+9. dopiero potem analizuj kod.
 
 ## 3. Zasada separacji
 
@@ -86,3 +87,13 @@ Hipoteza nie może być jedyną podstawą implementacji.
 Nowy projekt dodaje się przez nowy descriptor w `projects/`.
 
 Nie kopiuj globalnych polityk do repozytoriów projektowych, jeżeli nie istnieje lokalna potrzeba ich rozszerzenia.
+
+
+## 9. Warstwa dostępu do repozytorium
+
+Sposób dostępu do repozytorium jest niezależny od source-of-truth.
+
+`PRIMARY_REPO` określa **które repozytorium** jest właściwe.
+`ACCESS_BACKEND` określa **jak model uzyskuje do niego dostęp**.
+
+Szczegóły definiuje `core/ACCESS_BACKENDS.md`.

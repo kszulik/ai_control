@@ -1,0 +1,26 @@
+[server]
+max_read_lines = 1000
+max_file_bytes = 1048576
+max_output_chars = 200000
+git_timeout_seconds = 10
+
+# Copy this file to config.toml and edit local paths.
+# v0.1 is read-only. No build, write, commit, push or arbitrary shell tools exist.
+
+[projects.ai_control]
+path = "I:/paudio/ai_control"
+require_git = true
+require_identity = false
+expected_identity = "ai_control"
+
+[projects.2lg2_avc]
+path = "I:/paudio/2lg2_AVC"
+require_git = true
+require_identity = false
+expected_identity = "2lg2_avc"
+
+[projects.cdso_old]
+path = "I:/paudio/REPOSITORY_AZURE/RepozytoriumCDSO"
+require_git = true
+require_identity = false
+expected_identity = "cdso_old"

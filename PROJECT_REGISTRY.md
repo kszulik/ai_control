@@ -22,6 +22,7 @@ Model powinien używać go do identyfikacji właściwego descriptoru projektu pr
 | Project | Descriptor | Status | Zakres |
 |---|---|---|---|
 | CDSO_pAudio | `projects/cdso_paudio.md` | ACTIVE | wielorepozytoryjny projekt firmware/audio |
+| 2LG2_AVC | `projects/2lg2_avc.md` | ACTIVE | niezależny projekt rozwojowy AVC dla karty 2LG2 |
 
 ## Identyfikacja projektu
 
