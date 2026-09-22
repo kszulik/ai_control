@@ -51,3 +51,16 @@ Nie twórz następujących po sobie commitów typu:
 - osobny commit "Docs" opisujący dokładnie tę samą zmianę.
 
 Wyjątkiem jest zadanie wyłącznie dokumentacyjne lub niezależna korekta dokumentacji niewynikająca z bieżącej zmiany implementacji.
+
+
+## Format generowanych dokumentow i raportow
+
+Gdy uzytkownik prosi o wygenerowanie dokumentacji, raportu, analizy lub podobnego
+materialu jako pliku, domyslnym formatem wyjsciowym jest PDF.
+
+Nie generuj dodatkowo pliku DOCX, jezeli uzytkownik o niego jawnie nie poprosil.
+DOCX ani inny format edytowalny nie jest wymaganym artefaktem posrednim do
+przekazania uzytkownikowi.
+
+Jezeli uzytkownik wskaze konkretny format pliku, jego biezace polecenie ma
+pierwszenstwo przed domyslnym PDF.
