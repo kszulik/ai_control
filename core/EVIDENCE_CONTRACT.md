@@ -41,6 +41,20 @@ jeżeli nie istnieje dowód odpowiadający dokładnie temu twierdzeniu.
 
 Brak wyniku narzędzia nie może być uzupełniony wynikiem prawdopodobnym, oczekiwanym ani zapamiętanym z wcześniejszej rozmowy.
 
+## 2a. Rewalidacja aktualnego kodu
+
+Dowód dotyczący implementacji musi pochodzić z bieżącej rewizji, jeżeli twierdzenie ma być użyte jako fakt o stanie aktualnym.
+
+Pamięć rozmowy, wcześniejsze raporty, wcześniejsze commity i wcześniejsze pomiary nie potwierdzają automatycznie aktualnego stanu kodu.
+
+Jeżeli twierdzenie można rozsądnie sprawdzić w `PRIMARY_REPO`, należy je sprawdzić przed użyciem jako istotnej przesłanki diagnostycznej lub implementacyjnej.
+
+Dla istotnych twierdzeń o kodzie utrzymuj ścieżkę dowodową:
+
+`repo -> branch/SHA -> plik -> symbol/funkcja`
+
+Jeżeli nie udało się odtworzyć takiej podstawy dla twierdzenia o bieżącej implementacji, oznacz je jako **HYPOTHESIS** albo **BRAK DANYCH**, a nie jako **VERIFIED**.
+
 ## 3. Poziomy weryfikacji
 
 Stosuj następujące znaczenia:
