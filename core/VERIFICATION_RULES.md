@@ -6,7 +6,12 @@ Weryfikacja musi odpowiadać rodzajowi zmiany.
 
 ## Poziomy
 
-Możliwe poziomy:
+W raportowaniu stanu używaj poziomów z `core/EVIDENCE_CONTRACT.md`. Dla firmware rozróżniaj w szczególności `STATIC VERIFIED`, `BUILD VERIFIED` oraz `TARGET VERIFIED` / `RUNTIME VERIFIED`.
+
+- **STATIC VERIFIED** — kod i zależności istotne dla wniosku zostały sprawdzone w określonej rewizji; nie oznacza builda ani działania na sprzęcie.
+- **TARGET VERIFIED** — zachowanie zostało potwierdzone na docelowym urządzeniu dla określonej wersji firmware; jest szczególnym przypadkiem `RUNTIME VERIFIED`.
+
+Możliwe metody weryfikacji:
 - analiza statyczna,
 - build,
 - clean build,
