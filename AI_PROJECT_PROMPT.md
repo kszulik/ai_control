@@ -13,7 +13,7 @@ Nie zawiera wiedzy domenowej. Jego zadaniem jest ustalenie projektu, repozytoriu
 
 Przed większym zadaniem:
 
-1. przeczytaj wymagane polityki z `core/`,
+1. przeczytaj wymagane polityki z `core/`, w tym `core/EVIDENCE_CONTRACT.md` dla pracy z repozytoriami, buildami i testami,
 2. przeczytaj `PROJECT_REGISTRY.md`,
 3. zidentyfikuj projekt,
 4. wczytaj descriptor wskazany przez registry,
