@@ -46,8 +46,10 @@ Brak wyniku narzędzia nie może być uzupełniony wynikiem prawdopodobnym, ocze
 Stosuj następujące znaczenia:
 
 - **VERIFIED** — właściwe repozytorium, branch lub rewizja i dana właściwość zostały bezpośrednio sprawdzone.
+- **STATIC VERIFIED** — kod i zależności istotne dla danego wniosku zostały sprawdzone w określonej rewizji; nie oznacza builda ani działania na sprzęcie.
 - **BUILD VERIFIED** — build został rzeczywiście uruchomiony dla wskazanej rewizji i jego wynik jest dostępny.
 - **RUNTIME VERIFIED** — zachowanie zostało potwierdzone na właściwej wersji firmware testem runtime, pomiarem, debuggerem, logiem albo telemetrią.
+- **TARGET VERIFIED** — zachowanie zostało potwierdzone na docelowym urządzeniu dla określonej wersji firmware; jest szczególnym przypadkiem `RUNTIME VERIFIED`.
 - **RUNTIME UNVERIFIED** — kod lub build został sprawdzony, ale zachowanie na urządzeniu nie zostało potwierdzone.
 - **HYPOTHESIS** — proponowane wyjaśnienie wymagające dalszego dowodu.
 - **BRAK DANYCH** — dostępne źródła nie pozwalają potwierdzić twierdzenia.
@@ -125,8 +127,9 @@ Przed operacją destrukcyjną, cofnięciem, merge albo oceną zakresu commitów 
 Dla większych zadań repozytoryjnych końcowy raport powinien rozróżniać, zależnie od zakresu:
 
 - co zostało **VERIFIED**,
+- co jest **STATIC VERIFIED**,
 - co jest **BUILD VERIFIED**,
-- co jest **RUNTIME VERIFIED**,
+- co jest **RUNTIME VERIFIED** lub **TARGET VERIFIED**,
 - co pozostaje **RUNTIME UNVERIFIED**,
 - które elementy są nadal **HYPOTHESIS** lub **BRAK DANYCH**.
 
