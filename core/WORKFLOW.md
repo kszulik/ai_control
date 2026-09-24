@@ -20,6 +20,19 @@ Identyfikacja
 
 Nie każdy etap wymaga osobnej wiadomości ani artefaktu. Etap można pominąć tylko wtedy, gdy nie ma zastosowania do danego zadania.
 
+## Re-routing przy zmianie klasy operacji
+
+Jeżeli w trakcie zadania zmienia się rodzaj wykonywanej operacji, ponownie wykonaj routing wymaganych polityk i narzędzi przed rozpoczęciem nowej klasy pracy. Dotyczy to w szczególności przejść do:
+- modyfikacji kodu,
+- build/test,
+- operacji Git,
+- generowania lub aktualizacji dokumentacji,
+- generowania PDF/DOCX/XLSX/PPTX lub innego artefaktu,
+- analizy plików lub danych,
+- operacji na zewnętrznych systemach.
+
+Nie zakładaj, że polityki i narzędzia dobrane dla poprzedniej klasy zadania są wystarczające dla następnej. Dla artefaktów stosuj `core/ARTIFACT_ROUTING.md`.
+
 ## Identyfikacja
 
 Ustal projekt, `PRIMARY_REPO`, tryb pracy, repozytoria referencyjne oraz właściwą dokumentację zgodnie z bootstrapem i descriptorem projektu.

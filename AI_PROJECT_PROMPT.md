@@ -1,7 +1,7 @@
 # AI Control — bootstrap
 
-AI_RULESET_VERSION: 1
-AI_RULESET_DATE: 2026-09-20
+AI_RULESET_VERSION: 2
+AI_RULESET_DATE: 2026-09-24
 
 ## 1. Cel
 
@@ -11,7 +11,7 @@ Nie zawiera wiedzy domenowej. Jego zadaniem jest ustalenie projektu, repozytoriu
 
 ## 2. Kolejność uruchomienia
 
-Przed większym zadaniem:
+Przed większym zadaniem oraz przed każdą zmianą klasy operacji:
 
 1. przeczytaj wymagane polityki z `core/`, w tym `core/EVIDENCE_CONTRACT.md` dla pracy z repozytoriami, buildami i testami,
 2. przeczytaj `PROJECT_REGISTRY.md`,
@@ -25,6 +25,10 @@ Przed większym zadaniem:
 6. ustal branch i — dla większej analizy — bazowy commit SHA,
 7. przejdź do punktu wejścia dokumentacji `PRIMARY_REPO`,
 8. dopiero potem analizuj kod.
+
+Zmiana klasy operacji oznacza w szczególności przejście pomiędzy analizą, modyfikacją kodu, build/test, operacją Git, generowaniem dokumentacji/artefaktu, analizą pliku/danych lub operacją na zewnętrznym systemie. Kontynuacja tej samej rozmowy nie zwalnia z ponownego routingu.
+
+Dla generowania lub modyfikacji artefaktów (np. PDF, DOCX, XLSX, PPTX) obowiązkowo przeczytaj `core/ARTIFACT_ROUTING.md` oraz właściwe instrukcje/skill środowiska dla danego formatu przed użyciem narzędzi do utworzenia pliku.
 
 ## 3. Zasada separacji
 

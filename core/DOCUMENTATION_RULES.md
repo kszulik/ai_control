@@ -53,6 +53,10 @@ Nie twórz następujących po sobie commitów typu:
 Wyjątkiem jest zadanie wyłącznie dokumentacyjne lub niezależna korekta dokumentacji niewynikająca z bieżącej zmiany implementacji.
 
 
+## Routing generowanych artefaktow
+
+Przed utworzeniem pliku dokumentacji, raportu lub innego artefaktu stosuj `core/ARTIFACT_ROUTING.md`. Ta polityka określa obowiązkowy preflight, dobór instrukcji/skillów środowiska i weryfikację gotowego pliku.
+
 ## Format generowanych dokumentow i raportow
 
 Gdy uzytkownik prosi o wygenerowanie dokumentacji, raportu, analizy lub podobnego
